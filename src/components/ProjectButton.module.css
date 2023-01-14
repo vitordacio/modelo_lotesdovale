@@ -1,0 +1,35 @@
+/* .project {
+    color: #9c1519;
+    margin-bottom: 1rem;
+    border-top: 1px solid #212529;
+    border-bottom: 1px solid #212529;
+    padding: 1rem 0;
+} */
+
+/* .project h2 {
+    margin-bottom: .7rem;
+} */
+
+/* .project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    padding: 7px 25px;
+
+    transition: all .35s;
+    border-radius: 5px;
+    color: #6F2F3F;
+    border: 1px solid #6F2F3F;
+} */
+
+.project a:hover {
+    background: #6F2F3F;
+    color: #fff;
+}

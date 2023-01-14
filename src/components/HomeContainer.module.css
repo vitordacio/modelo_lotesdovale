@@ -1,0 +1,52 @@
+.HomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 55px 6rem;
+
+    background-color: #f9f9f9;
+}
+
+.HomeContainerMap {
+    width: 100%;
+    height: 500px;
+
+    margin-bottom: 2rem;
+}
+
+.HomeContainer h2 {
+    display: block;
+
+    width: 100%;
+    margin-bottom: 4rem;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #8a9199;
+}
+
+.HomeContainer h2 span {
+    display: block;
+
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: bold;
+
+    color: #000;
+}
+
+@media screen and (max-width: 536px) {
+
+    .HomeContainer {
+        padding: 55px 2rem;
+    }
+}
+
+@media screen and (max-width: 408px) {
+
+    .HomeContainer {
+        padding: 55px 1rem;
+    }
+}

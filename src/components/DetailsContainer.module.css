@@ -1,0 +1,44 @@
+.DetailsContainer {
+    padding: 3em 6em;
+
+    background-color: #f9f9f9;
+}
+
+.DetailsContainerb {
+    display: flex;
+
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.DetailsContainerb div {
+    width: 50%;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .DetailsContainerb {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+    }
+
+    .DetailsContainerb div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .DetailsContainer {
+        padding: 3em 1em;
+    }
+}

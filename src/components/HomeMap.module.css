@@ -1,0 +1,13 @@
+.homeMap {
+    height: 500px;
+    background-color: #f9f9f9;
+}
+
+.homeMapMarker {
+    margin-top: -40px;
+    padding: .3rem;
+
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: white;
+}

@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    padding: 3rem;
+    width: 50vw;
+    height: 80vh;
+
+    background-color: #f9f9f9;
+    border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.closeBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-image: url('./img/close-dark.svg');
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.modal h2 {
+    position: absolute;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: 500;
+
+    top: 3rem;
+
+    color: #9c1519;
 }
 
-.App-link {
-  color: #61dafb;
+.modal h2 span {
+    display: block;
+
+    text-transform: uppercase;
+
+    font-size: 28px;
+    font-weight: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.more {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.modalWpp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    margin-top: 1.5rem;
+    padding: 10px 35.71px;
+
+    font-size: 20px;
+
+    transition: all .35s;
+
+    border-radius: 5px;
+    border: 1px solid #075E54;
+
+    color: #fff;
+    background-color: #075E54;
+}
+
+.modalWpp:hover {
+    font-weight: 700;
+
+    box-shadow: 3px 3px 3px black;
+    background-color: #fff;
+    color: #075E54;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .modal {
+        width: 75vw;
+
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .modal {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .modal {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .modal {
+        height: 95vh;
+    }
 }

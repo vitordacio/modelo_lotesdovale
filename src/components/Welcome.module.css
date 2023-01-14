@@ -1,0 +1,72 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+    padding: 3em 6rem;
+
+    background-image: url('../img/pontenoite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 45%;
+}
+
+
+
+.welcome h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.welcome h3 span {
+    display: block;
+
+    margin-top: .7rem;
+
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 26px;
+    font-weight: 900;
+}
+
+.welcome p {
+    display: block;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+
+    color: #959595;
+}
+
+@media screen and (max-width: 576px) {
+    .welcome h3 span {
+        line-height: 40px;
+    }
+
+    .welcome p {
+        color: #fff;
+
+    }
+
+}
+
+@media screen and (max-width: 373px) {
+    .welcome h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .welcome h3 {
+        font-size: 1rem;
+    }
+}
